@@ -1,0 +1,26 @@
+body {
+	h1 {
+		font-size: 48px;
+		font-weight: normal;
+		color: #f00;
+	}
+}
+
+@color:  hsl(110, 63%, 49%);
+
+header {
+	h1 {
+		color: @color;
+		background-color: saturate(@color, 10%);
+	}
+
+	h2 {
+		color: green;
+	}
+	p {
+		background-color: desaturate(@color, 20%);
+		a {
+			background-color: contrast(@color, rgb(17, 77, 15), rgb(230, 247, 218), 70%);
+		}
+	}
+}
